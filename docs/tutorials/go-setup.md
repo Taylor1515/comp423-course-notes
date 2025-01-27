@@ -4,7 +4,7 @@
 
 * Reviewer: [Jack Coury](https://github.com/jcoury89)
 
-* Site adapted from [Comp 423 Mkdocs Tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-you-will-learn)
+* This site has been heavily influenced by and uses information from the [Comp 423 Mkdocs Tutorial](https://comp423-25s.github.io/resources/MkDocs/tutorial/#what-you-will-learn)
 
 ## Prerequisites
 
@@ -119,7 +119,7 @@ The devcontainer.json file defines the configuration for your development enviro
 
 ## Getting Started with Go
 
-Adapted from Go Documentations Getting [Started Tutorial](https://go.dev/doc/tutorial/getting-started)
+This section has been heavily influenced and using information from Go Documentations Getting [Started Tutorial](https://go.dev/doc/tutorial/getting-started)
 
 ### Step 1: Setup
 
@@ -192,7 +192,7 @@ There are two ways to run our hello.go file
 !!!NOTE
     Using the build subcommand in go is similar to using GCC in COMP 211 for C and C++. Build generates a binary executable file that we can then run directly in the terminal. 
 
-## Pushig Changes to the Repository
+## Pushing Changes to the Repository
 
 ### Step 1: Add and commit your changed
 
