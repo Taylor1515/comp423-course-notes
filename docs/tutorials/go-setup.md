@@ -87,7 +87,7 @@ The devcontainer.json file defines the configuration for your development enviro
 
 * postCreateCommand: A command to run after the container is created. Here we are checking the current version of go that is installed. 
 
-```
+```json
  {
 	"name": "Go",
 	"image": "mcr.microsoft.com/vscode/devcontainers/go:latest",
@@ -107,7 +107,7 @@ The devcontainer.json file defines the configuration for your development enviro
 
 	"remoteUser": "vscode"
 }
-```
+``` 
 
 ### Step 2: Reopen the Project in a VSCode Dev Container
 
@@ -115,7 +115,7 @@ The devcontainer.json file defines the configuration for your development enviro
 
 2. Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running go version to see your dev container is running a recent version of Go without much effort!
 
-//Steps to create a new project, write a basic "Hello COMP423" program, compile, and run
+
 
 ## Getting Started with Go
 
@@ -176,7 +176,7 @@ There are two ways to run our hello.go file
 
     You should see "Hello COMP 423" printed on the consol.
 
-    //in the adomniaitn thingy
+!!!NOTE
     While the go run command is a useful shortcut for compiling and running a program when you're making frequent changes, it doesn't generate a binary executable.
 
 #### Option 2. Use the build subcommand to complile and run the built binary directly.
@@ -189,7 +189,7 @@ There are two ways to run our hello.go file
 
         ./hello
 
-    //in the adomniaitn thingy
+!!!NOTE
     Using the build subcommand in go is similar to using GCC in COMP 211 for C and C++. Build generates a binary executable file that we can then run directly in the terminal. 
 
 ## Pushig Changes to the Repository
