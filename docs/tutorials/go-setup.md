@@ -143,7 +143,6 @@ This section has been heavily influenced and using information from Go Documenta
      For the purposes of this tutorial, just use example/hello. 
 
             go mod init example/hello
-            go: creating new go.mod: module example/hello
 
 2. Create a file called hello.go
 
