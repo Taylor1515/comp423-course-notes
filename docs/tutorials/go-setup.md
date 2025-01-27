@@ -119,6 +119,99 @@ The devcontainer.json file defines the configuration for your development enviro
 
 ## Getting Started with Go
 
-Adapted from 
+Adapted from Go Documentations Getting [Started Tutorial](https://go.dev/doc/tutorial/getting-started)
 
-### Step 1: 
+### Step 1: Setup
+
+1. Ensure you are inside of the GoTutorial directory and container.
+
+2. Use go version to ensure go is installed in the container.
+
+3. Create and enter a directory inside of GoTutorial called hello:
+
+        mkdir hello
+        cd hello
+
+### Step 2: Write Some Code
+
+1. Use mod to enable dependancy tracking for your code.
+     
+     When your code imports packages contained in other modules, you manage those dependencies through your code's own module. That module is defined by a go.mod file that tracks the modules that provide those packages. That go.mod file stays with your code, including in your source code repository.
+
+     To enable dependency tracking for your code by creating a go.mod file, run the go mod init command, giving it the name of the module your code will be in. The name is the module's module path.
+
+     For the purposes of this tutorial, just use example/hello. 
+
+            go mod init example/hello
+            go: creating new go.mod: module example/hello
+
+2. Create a file called hello.go
+
+3. Paste the following code into your hello.go file and save: 
+
+        package main
+
+        import "fmt"
+
+        func main() {
+            fmt.Println("Hello COMP423")
+        }
+    This is your Go code. In this code, you:
+
+    * Declare a main package (a package is a way to group functions, and it's made up of all the files in the same directory).
+    
+    * Import the popular fmt package, which contains functions for formatting text, including printing to the console. This package is one of the standard library packages you got when you downloaded your GoTutorial container.
+    
+    * Implement a main function to print a message to the console. A main function executes by default when you run the main package.
+
+### Step 3: Runing your code
+
+There are two ways to run our hello.go file
+
+#### Option 1: Use the run subcommand
+
+1. Use the following comand to see the greeting
+
+        go run .
+
+    You should see "Hello COMP 423" printed on the consol.
+
+    //in the adomniaitn thingy
+    While the go run command is a useful shortcut for compiling and running a program when you're making frequent changes, it doesn't generate a binary executable.
+
+#### Option 2. Use the build subcommand to complile and run the built binary directly.
+
+1. From the command line in the hello directory, run the go build command to compile the code into an executable. 
+
+        go build
+
+2. From the command line in the hello directory, run the new hello executable to confirm that the code works. 
+
+        ./hello
+
+    //in the adomniaitn thingy
+    Using the build subcommand in go is similar to using GCC in COMP 211 for C and C++. Build generates a binary executable file that we can then run directly in the terminal. 
+
+## Pushig Changes to the Repository
+
+### Step 1: Add and commit your changed
+
+1. Add changes:
+
+        git add .
+
+2. Commit changes and leave a descriptive message:
+
+        git commit -m "Completed container setup and Go tutorial"
+
+### Step 2: Push Changes to GitHub
+
+1. push changes:
+
+        git push origin main
+
+2. Login to GitHub and makesure the repository has updated with your go file.
+
+## Congratulations
+
+You have setup a development container for go and written your first program! Use what you learned here to keep GO-ing!
